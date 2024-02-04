@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Justus's Portfolio</title>
     <style>
         :root {
-            --primary-color: #3498db; /* Set your primary color */
-            --font-family: 'Arial', sans-serif; /* Choose your font-family */
+            --primary-color: #3498db;
+            --font-family: 'Arial', sans-serif;
         }
 
         body {
@@ -15,7 +15,9 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: #f8f9fa; /* Set your background color */
+            background-color: #f8f9fa;
+            height: 100vh; /* Set the height of the body to cover the whole screen */
+            overflow: hidden; /* Hide the scroll bar initially */
         }
 
         header {
@@ -28,7 +30,7 @@
         nav {
             display: flex;
             justify-content: space-around;
-            background-color: #343a40; /* Set your navigation background color */
+            background-color: #343a40;
             padding: 10px;
         }
 
@@ -50,18 +52,48 @@
 
         .work-section img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
             border: 2px solid var(--primary-color);
             border-radius: 5px;
             cursor: pointer;
+            margin-bottom: 10px;
         }
 
         .work-section img:first-child {
             border-width: 4px;
         }
 
+        .app-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .app-link {
+            padding: 10px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .app-link:hover {
+            background-color: #2c3e50;
+        }
+
         @media only screen and (min-width: 768px) {
-            /* Add styles for larger screens here */
+            .work-section img {
+                width: calc(33.333% - 20px);
+                margin-right: 20px;
+            }
+
+            .work-section img:last-child {
+                margin-right: 0;
+            }
         }
     </style>
 </head>
@@ -79,21 +111,29 @@
 
     <section id="about-section">
         <h2>About Me</h2>
-       I am 23 years old i have 3 years of expeirience trading live funds in the foreign exchange market, im 6 months into the coding enviorment and im getting acustom to software engineering after working on numerous projects.
+        I am 23 years old with 3 years of experience trading live funds in the foreign exchange market. I am 6 months into the coding environment and getting accustomed to software engineering after working on numerous projects.
     </section>
 
     <section id="work-section" class="work-section">
         <h2>My Work</h2>
-        Instructions to run the apps are in the repo readme's, copy and paste links in url.
-        <img src="app2.jpg" alt="https://github.com/justusmcdougal317/Climate-Recognizance">
-        <img src="app2.jpg" alt="https://github.com/justusmcdougal317/Note-Taker">
-        <img src="app3.jpg" alt="https://github.com/justusmcdougal317/Workforce-Monitoring">
+        
+       
+        <img src="images/screencapture-127-0-0-1-5501-2024-02-04-11_37_38.png" alt="Climate Recognizance">
+        <img src="images/screencapture-localhost-3000-2024-02-04-11_46_03 (1).png" alt="Note Taker">
+        
         <!-- Add more images for your applications -->
     </section>
 
     <section id="contact-section">
         <h2>Contact Me</h2>
-       Email: justus317@yahoo.com
+        Email: justus317@yahoo.com
     </section>
+
+    <div class="app-links">
+        <!-- Clickable links to your applications -->
+        <a class="app-link" href="https://github.com/justusmcdougal317/Climate-Recognizance" target="_blank">Climate Recognizance</a>
+        <a class="app-link" href="https://github.com/justusmcdougal317/Note-Taker" target="_blank">Note Taker</a>
+        <!-- Add more links as needed -->
+    </div>
 </body>
 </html>
