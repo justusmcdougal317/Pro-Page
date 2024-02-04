@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #3498db; /* Set your primary color */
+            --font-family: 'Arial', sans-serif; /* Choose your font-family */
+        }
+
+        body {
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa; /* Set your background color */
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #343a40; /* Set your navigation background color */
+            padding: 10px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--primary-color);
+            color: #ffffff;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .work-section img {
+            width: 100%;
+            height: auto;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .work-section img:first-child {
+            border-width: 4px;
+        }
+
+        @media only screen and (min-width: 768px) {
+            /* Add styles for larger screens here */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Justus</h1>
+        <img src="avatar.jpg" alt="McDougal">
+    </header>
+
+    <nav>
+        <a href="#about-section">About</a>
+        <a href="#work-section">Work</a>
+        <a href="#contact-section">Contact</a>
+    </nav>
+
+    <section id="about-section">
+        <h2>About Me</h2>
+       I am 23 years old i have 3 years of expeirience trading live funds in the foreign exchange market, im 6 months into the coding enviorment and im getting acustom to software engineering after working on numerous projects.
+    </section>
+
+    <section id="work-section" class="work-section">
+        <h2>My Work</h2>
+        Instructions to run the apps are in the repo readme's, copy and paste links in url.
+        <img src="app2.jpg" alt="https://github.com/justusmcdougal317/Climate-Recognizance">
+        <img src="app2.jpg" alt="https://github.com/justusmcdougal317/Note-Taker">
+        <img src="app3.jpg" alt="https://github.com/justusmcdougal317/Workforce-Monitoring">
+        <!-- Add more images for your applications -->
+    </section>
+
+    <section id="contact-section">
+        <h2>Contact Me</h2>
+       Email: justus317@yahoo.com
+    </section>
+</body>
+</html>
